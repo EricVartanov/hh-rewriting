@@ -1,0 +1,153 @@
+/* universal classes */
+
+.button {
+    border: 1px solid transparent;
+    padding: 16px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Proxima Nova', sans-serif;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    z-index: 0;
+    position: relative;
+}
+
+section {
+    position: relative;
+}
+
+.bg-wrapper {
+    background: linear-gradient(10.81deg, rgba(6, 41, 105, 0.61) 2.9%, rgba(110, 8, 126, 0) 37.11%), linear-gradient(302.26deg, #3A1182 8.04%, #C531BF 48.93%, #FDA727 90.79%);
+    height: 100%;
+    width: 200%;
+    top: 0;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+.shape {
+    top: 0;
+    left: 50%;
+    position: absolute;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+
+/* *************head******************* */
+
+.head .container {
+    padding-top: 220px;
+    padding-bottom: 150px;
+    max-width: 1280px;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.head__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 105%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.head__subtitle-wrapper {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.head__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 70px;
+}
+
+.head__button {
+    background-color: #fff;
+    color: #0F53FA;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.head__button:hover {
+    transition: 0.5s;
+    background-color: #0F53FA;
+    color: #fff;
+}
+
+.head__main-img {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 750px;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.head__info {
+    width: 100%;
+    display: flex;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.head__animation-array {
+    width: 143px;
+    height: 147px;
+}
+
+.head__info-item {
+    margin-right: 50px;
+}
+
+.head__info-text {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 16px;
+}
+
+
+/* .head .wave {
+    margin-top: 25px;
+} */
