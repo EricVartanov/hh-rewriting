@@ -1,14 +1,53 @@
-// const headerSwiper = new Swiper('.aaa', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
+const macBookSwiper = new Swiper('.idc-macbook__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
+    autoplay: {
+        delay: 4000,
+    },
 
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.head__swiper-next',
-//         prevEl: '.head__swiper-prev',
-//     },
+    pagination: {
+        el: '.idc-macbook__swper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
 
+});
 
-// });
+const articleSwiper = new Swiper('.idc-article__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    slidesPerView: 1,
+    spaceBetween: 30,
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    },
+
+    pagination: {
+        el: '.idc-article__swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.idc-article__swiper-button-next',
+        prevEl: '.idc-article__swiper-button-prev',
+    },
+});

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="telephone=no" name="format-detection">
-    <title>Хедхантер</title>
+    <title>Rewriting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -21,73 +21,401 @@
 </head>
 
 <body>
-    <div class="main-wrapper">
-        <div class="shape rellax " style="left: -5%; top: 20%; " data-rellax-speed="2"><img src="img/header animation/Star-1.svg " alt="star "></div>
-        <div class="shape rellax " style="left: 10%;top: 38%; " data-rellax-speed="4 "><img src="img/header animation/skrepka.svg " alt="skrepka "></div>
-        <div class="shape rellax " style="left: -15%; top: 70%; " data-rellax-speed="-2 "><img src="img/header animation/zigzag.svg " alt="zigzag "></div>
-        <div class="shape rellax " style="left: 95%; top: 30%; transform: rotate(-40deg); " data-rellax-speed="-2">
-            <img src="img/header animation/zigzag.svg " alt="zigzag ">
+    <div class="idc-main-wrapper">
+        <div class="shape rellax" style="left: -15%; top: 80%;" data-rellax-speed="-6"><img src="img/header animation/zigzag.svg" alt="zigzag"></div>
+        <div class="shape rellax" style="left: 95%; top: 30%; transform: rotate(-40deg);" data-rellax-speed="-6">
+            <img src="img/header animation/zigzag.svg" alt="zigzag">
         </div>
-        <div class="shape rellax " style="left: -20%;top: 35%; opacity: 0.4; font-weight: 600; font-size: 140px; line-height: 171px; color: #DBDEE4; transform: rotate(-25deg); " data-rellax-speed="-6">A</div>
-        <div class="shape rellax " style="left: 95%; top: 60%; opacity: 0.4; font-weight: 600; font-size: 140px; line-height: 171px; color: #DBDEE4; transform: rotate(25deg); " data-rellax-speed="-6">D</div>
-        <div class="shape rellax " style="z-index: 0; width: 381px; height: 381px; left: 10%; top: 550px;border-radius: 50%; background: linear-gradient(332.96deg, #ED8554 9.19%, rgba(255, 233, 215, 0.75) 86.46%, rgba(255, 255, 255, 0.6) 86.46%);; opacity:0.4; "
-            data-rellax-speed="2 "></div>
-        <div class="shape rellax " style="left: 70%; top: 665px;z-index: 12; " data-rellax-speed="-2"><img src="img/header animation/paper-r1.svg " alt="paper-r1"></div>
-        <div class="shape rellax " style="left: 60%; top: 618px;z-index: 12; " data-rellax-speed="2"><img src="img/header animation/paper-r2.svg " alt="paper-r2"></div>
-        <div class="shape rellax " style="left: 20%; top: 745px;z-index: 12; " data-rellax-speed="-2"><img src="img/header animation/paper-l1.svg " alt="paper-l1"></div>
-        <div class="shape rellax " style="left: 35%; top: 840px; z-index: 12; " data-rellax-speed="2"><img src="img/header animation/paper-l2.svg " alt="paper-l2"></div>
-        <div class="shape rellax " style="left: 60%; top: 585px; " data-rellax-speed="-1"><img src="img/header animation/dots.svg" alt="dots"></div>
+        <div class="shape rellax" style="left: -10%;top: 35%; opacity: 0.4; font-weight: 600; font-size: 140px; line-height: 171px; color: #DBDEE4; transform: rotate(-25deg);" data-rellax-speed="-6">A</div>
+        <div class="shape rellax" style="left: 95%; top: 60%; opacity: 0.4; font-weight: 600; font-size: 140px; line-height: 171px; color: #DBDEE4; transform: rotate(25deg);" data-rellax-speed="-6">D</div>
 
 
-        <section class="head">
-            <div class="bg-wrapper"></div>
-            <div class="container ">
-                <h1 class="head__title title ">Вакансия от эксперта</h1>
-                <div class="head__subtitle-wrapper flex">
-                    <span class="head__arrows">
-                            <img src="img/head/left.svg " alt="left ">
-                        </span>
-                    <p class="head__subtitle subtitle ">Составим текст вашей вакансии для <br> привлечения целевых кандидатов
+
+        <div class="idc-head">
+            <div class="idc-bg-wrapper idc-gradient-bg">
+                <svg class="idc-wave" xmlns:xlink="http://www.w3.org/1999/xlink " id="wave " style="transform:rotate(0deg); transition: 0.3s " viewBox="0 0 1600 80 " version="1.1 " xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sw-gradient-0" x1="0 " x2="0 " y1="1 " y2="0 ">
+                            <stop stop-color="rgba(255, 255, 255, 1) " offset="0% " />
+                            <stop stop-color="rgba(255, 255, 255, 1) " offset="100% " />
+                        </linearGradient>
+                    </defs>
+                    <path style="transform:translate(0, 0px); opacity:1 " fill="url(#sw-gradient-0) "
+                        d="M0,60L80,65C160,70,320,80,480,76.7C640,73,800,57,960,45C1120,33,1280,27,1440,31.7C1600,37,1760,53,1920,55C2080,57,2240,43,2400,35C2560,27,2720,23,2880,18.3C3040,13,3200,7,3360,11.7C3520,17,3680,33,3840,45C4000,57,4160,63,4320,63.3C4480,63,4640,57,4800,56.7C4960,57,5120,63,5280,70C5440,77,5600,83,5760,71.7C5920,60,6080,30,6240,16.7C6400,3,6560,7,6720,18.3C6880,30,7040,50,7200,55C7360,60,7520,50,7680,40C7840,30,8000,20,8160,15C8320,10,8480,10,8640,8.3C8800,7,8960,3,9120,5C9280,7,9440,13,9600,16.7C9760,20,9920,20,10080,26.7C10240,33,10400,47,10560,53.3C10720,60,10880,60,11040,58.3C11200,57,11360,53,11440,51.7L11520,50L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z " />
+                </svg>
+            </div>
+            <div class="idc-container">
+                <!-- ***********************parallax************** -->
+
+                <div class="shape rellax " style="left: 10%;top: 38%; " data-rellax-speed="2 "><img src="img/header animation/skrepka.svg " alt="skrepka "></div>
+                <div class="shape rellax " style="left: 50%;top: 45%; " data-rellax-speed="2 "><img src="img/header animation/skrepka-min.svg " alt="skrepka-min "></div>
+                <div class="shape rellax " style="left: 85%; top: 60%; " data-rellax-speed="2 "><img src="img/header animation/star-min.svg " alt="star-min "></div>
+                <div class="shape rellax " style="left: -5%; top: 20%; " data-rellax-speed="2 "><img src="img/header animation/Star-1.svg " alt="star "></div>
+                <div class="shape rellax " style="z-index: 0; width: 381px; height: 381px; left: 10%; top: 550px;border-radius: 50%; background: linear-gradient(332.96deg, #ED8554 9.19%, rgba(255, 233, 215, 0.75) 86.46%, rgba(255, 255, 255, 0.6) 86.46%);;
+                opacity:0.4; " data-rellax-speed="2 "></div>
+                <div class="shape rellax " style="left: 70%; top: 665px;z-index: 12; " data-rellax-speed="-2 "><img src="img/header animation/paper-r1.svg " alt="paper-r1 "></div>
+                <div class="shape rellax " style="left: 60%; top: 618px;z-index: 12; " data-rellax-speed="2 "><img src="img/header animation/paper-r2.svg " alt="paper-r2 "></div>
+                <div class="shape rellax " style="left: 20%; top: 745px;z-index: 12; " data-rellax-speed="-2 "><img src="img/header animation/paper-l1.svg " alt="paper-l1 "></div>
+                <div class="shape rellax " style="left: 35%; top: 840px; z-index: 12; " data-rellax-speed="2 "><img src="img/header animation/paper-l2.svg " alt="paper-l2 "></div>
+                <div class="shape rellax " style="left: 60%; top: 585px; " data-rellax-speed="-1 "><img src="img/header animation/dots.svg " alt="dots "></div>
+
+                <!-- ***********************end of parallax************** -->
+
+                <h1 class="idc-title ">Вакансия от эксперта</h1>
+                <div class="idc-age-limit ">0+</div>
+                <div class="idc-head__subtitle-wrapper idc-flex ">
+                    <span class="idc-head__arrows ">
+                        <img src="img/head/left.svg " alt="left ">
+                    </span>
+                    <p class="idc-subtitle ">Составим текст вашей вакансии для <br> привлечения целевых кандидатов
                     </p>
-                    <span class="head__arrows">
-                            <img src="img/head/right.svg " alt="right ">
-                        </span>
+                    <span class="idc-head__arrows ">
+                        <img src="img/head/right.svg " alt="right ">
+                    </span>
                 </div>
-
-
-
-
-
-                <button class="head__button button ">Оставить заявку</button>
-
-                <div class="head__main-img " style="background-image: url(img/head/header-man.svg);"></div>
-
-                <div class="head__info ">
-                    <div class="head__info-item ">
+                <button class="idc-button idc-flex ">Оставить заявку</button>
+                <div class="idc-head__main-img " style="background-image: url(img/head/header-man.svg);"></div>
+                <div class="idc-head__info idc-flex ">
+                    <div class="idc-head__info-item ">
                         <img src="img/head/analise.svg " alt="header-analise ">
-                        <p class="head__info-text ">Анализ рынка публикуемой вакансии</p>
+                        <p class="idc-head__info-text ">Анализ рынка публикуемой вакансии</p>
                     </div>
-                    <div class="head__info-item ">
+                    <div class="idc-head__info-item ">
                         <img src="img/head/candidate.svg " alt="header-candidate ">
-                        <p class="head__info-text ">Описание портрета целевого кандидата</p>
+                        <p class="idc-head__info-text ">Описание портрета целевого кандидата</p>
                     </div>
 
-                    <div class="head__info-item ">
+                    <div class="idc-head__info-item ">
                         <img src="img/head/vacante.svg " alt="header-vacante ">
-                        <p class="head__info-text ">Составление текста вакансии, ориентированного на ЦА</p>
+                        <p class="idc-head__info-text ">Составление текста вашей вакансии</p>
                     </div>
-                    <div class="head__info-item ">
+                    <div class="idc-head__info-item ">
                         <img src="img/head/feedback.svg " alt="header-feedback ">
-                        <p class="head__info-text ">Увеличение откликов от релевантных кандидатов</p>
+                        <p class="idc-head__info-text ">Увеличение откликов от релевантных кандидатов</p>
                     </div>
-
-                    <!-- </div>
-                <div class="wave-wrapper" style="background-image: url(img/head/wave-1.svg);">
-                </div> -->
                 </div>
-        </section>
+
+
+            </div>
         </div>
 
+        <div class="idc-analyse">
+            <div class="idc-container ">
+                <div class="idc-analyse__wrapper idc-flex ">
+                    <div class="idc-analyse__title-block ">
+                        <h1 class="idc-title ">Проанализируем рынок соискателя</h1>
+                        <p class="idc-subtitle ">Мы постоянно исследуем внутреннюю аналитику большого количества вакансий и знаем, какие из них собирают больше откликов и почему</p>
+                    </div>
+                    <div class="idc-analyse__list-block ">
+                        <ul class="idc-analyse__list ">
+                            <li class="idc-analyse__list-item idc-mini-title ">
+                                <span class="idc-analyse__vector ">
+                                    <img src="/img/icons/vector.svg " alt="/ ">
+                                </span> Сколько нужных мне кандидатов на рынке? <span class="idc-subtitle ">Составим
+                                    портрет соискателя и проверим объем спроса в разрезе профобласти и региона</span>
+                            </li>
+                            <li class="idc-analyse__list-item idc-mini-title ">
+                                <span class="idc-analyse__vector ">
+                                    <img src="/img/icons/vector.svg " alt="/ ">
+                                </span> Каковы их зарплатные ожидания? <span class="idc-subtitle ">Проанализируем
+                                    требования по заработной плате</span>
+                            </li>
+                            <li class="idc-analyse__list-item idc-mini-title ">
+                                <span class="idc-analyse__vector ">
+                                    <img src="/img/icons/vector.svg " alt="/ ">
+                                </span> Насколько моя вакансия «в рынке»? <span class="idc-subtitle ">Определим
+                                    количество предложений работодателей и конкурентоспособность вашей вакансии</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="idc-analyse__wrapper idc-flex ">
+                    <div class="idc-analyse__title-block ">
+                        <h1 class="idc-title ">Составим текст вашей вакансии</h1>
+                        <p class="idc-subtitle ">На основе анализа рынка мы подготовим текст для вашей вакансии и рекомендации по ее продвижению</p>
+                    </div>
+                    <div class="idc-analyse__list-block ">
+                        <ul class="idc-analyse__list ">
+                            <li class="idc-analyse__list-item-two idc-mini-title ">
+                                <span class="idc-analyse__vector ">
+                                    <img src="/img/icons/vector.svg " alt="/ ">
+                                </span> Как составить мотивирующий на отклик текст вакансии? <span class="idc-subtitle ">Мы напишем его на языке вашей целевой аудитории</span>
+                            </li>
+                            <li class="idc-analyse__list-item-two idc-mini-title ">
+                                <span class="idc-analyse__vector ">
+                                    <img src="/img/icons/vector.svg " alt="/ ">
+                                </span> Как повысить посещаемость моей вакансии? <span class="idc-subtitle ">Оформим
+                                    текст с учетом его отображения в сниппете</span>
+                            </li>
+                            <li class="idc-analyse__list-item-two idc-mini-title ">
+                                <span class="idc-analyse__vector ">
+                                    <img src="/img/icons/vector.svg " alt="/ ">
+                                </span> Как увеличить количество релевантных откликов? <span class="idc-subtitle ">Донесем преимущества работы в вашей компании</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="idc-button idc-flex ">Оставить заявку</button>
+            </div>
+
+
+            <div class="idc-bg-wrapper">
+                <svg class="idc-wave" xmlns:xlink="http://www.w3.org/1999/xlink " id="wave " style="transform:rotate(0deg); transition: 0.3s " viewBox="0 0 1600 80 " version="1.1 " xmlns="http://www.w3.org/2000/svg ">
+                    <defs>
+                        <linearGradient id="sw-gradient-1" x1="0 " x2="0 " y1="1 " y2="0 ">
+                            <stop stop-color="rgba(247, 248, 250, 1) " offset="0% " />
+                            <stop stop-color="rgba(247, 248, 250, 1) " offset="100% " />
+                        </linearGradient>
+                    </defs>
+                    <path style="transform:translate(0, 0px); opacity:1 " fill="url(#sw-gradient-1) "
+                        d="M0,60L80,65C160,70,320,80,480,76.7C640,73,800,57,960,45C1120,33,1280,27,1440,31.7C1600,37,1760,53,1920,55C2080,57,2240,43,2400,35C2560,27,2720,23,2880,18.3C3040,13,3200,7,3360,11.7C3520,17,3680,33,3840,45C4000,57,4160,63,4320,63.3C4480,63,4640,57,4800,56.7C4960,57,5120,63,5280,70C5440,77,5600,83,5760,71.7C5920,60,6080,30,6240,16.7C6400,3,6560,7,6720,18.3C6880,30,7040,50,7200,55C7360,60,7520,50,7680,40C7840,30,8000,20,8160,15C8320,10,8480,10,8640,8.3C8800,7,8960,3,9120,5C9280,7,9440,13,9600,16.7C9760,20,9920,20,10080,26.7C10240,33,10400,47,10560,53.3C10720,60,10880,60,11040,58.3C11200,57,11360,53,11440,51.7L11520,50L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z " />
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="idc-instr">
+            <div class="idc-bg-wrapper idc-grey-bg">
+                <svg class="idc-wave" xmlns:xlink="http://www.w3.org/1999/xlink " id="wave " style="transform:rotate(0deg); transition: 0.3s " viewBox="0 0 1600 80 " version="1.1 " xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sw-gradient-0" x1="0 " x2="0 " y1="1 " y2="0 ">
+                            <stop stop-color="rgba(255, 255, 255, 1) " offset="0% " />
+                            <stop stop-color="rgba(255, 255, 255, 1) " offset="100% " />
+                        </linearGradient>
+                    </defs>
+                    <path style="transform:translate(0, 0px); opacity:1 " fill="url(#sw-gradient-0) "
+                        d="M0,60L80,65C160,70,320,80,480,76.7C640,73,800,57,960,45C1120,33,1280,27,1440,31.7C1600,37,1760,53,1920,55C2080,57,2240,43,2400,35C2560,27,2720,23,2880,18.3C3040,13,3200,7,3360,11.7C3520,17,3680,33,3840,45C4000,57,4160,63,4320,63.3C4480,63,4640,57,4800,56.7C4960,57,5120,63,5280,70C5440,77,5600,83,5760,71.7C5920,60,6080,30,6240,16.7C6400,3,6560,7,6720,18.3C6880,30,7040,50,7200,55C7360,60,7520,50,7680,40C7840,30,8000,20,8160,15C8320,10,8480,10,8640,8.3C8800,7,8960,3,9120,5C9280,7,9440,13,9600,16.7C9760,20,9920,20,10080,26.7C10240,33,10400,47,10560,53.3C10720,60,10880,60,11040,58.3C11200,57,11360,53,11440,51.7L11520,50L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z " />
+                </svg>
+            </div>
+            <div class="idc-container">
+                <h1 class="idc-title">Как это происходит</h1>
+                <div class="idc-instr__wrapper idc-flex">
+                    <div class="idc-instr__steps">
+                        <p class="idc-instr__step idc-flex"><span class="idc-instr__step-number">1</span>Вы оставляете заявку на сайте</p>
+                        <p class="idc-instr__step idc-flex"><span class="idc-instr__step-number">2</span>С вами связываются наши эксперты и задают уточняющие вопросы</p>
+                        <p class="idc-instr__step idc-flex"><span class="idc-instr__step-number">3</span>Мы делаем анализ рынка труда и составляем текст вакансии</p>
+                    </div>
+                    <div class="idc-instr__screen-img">
+                        <img src="img/instr/mobile-screen.png" alt="/">
+                    </div>
+                    <svg class="idc-instr__arrow icon">
+                        <use xlink:href="img/instr/animate-arrow.svg#animate-arrow"></use>
+                    </svg>
+                </div>
+
+                <h1 class="idc-title">Что вы получаете</h1>
+                <div class="idc-instr__get-list idc-flex">
+                    <div class="idc-instr__get-item idc-vector-one">
+                        <span class="idc-instr__vector">
+                            <img src="img/icons/vector-max.svg" alt="/">
+                        </span>
+                        <p class="idc-instr__step">Презентацию с аналитическими данными по рынку</p>
+                    </div>
+                    <div class="idc-instr__get-item idc-vector-two">
+                        <span class="idc-instr__vector">
+                            <img src="img/icons/vector-max.svg" alt="/">
+                        </span>
+                        <p class="idc-instr__step">Готовый текст вашей вакансии, основанный на экспертизе hh.ru</p>
+                    </div>
+                    <div class="idc-instr__get-item idc-vector-three">
+                        <span class="idc-instr__vector">
+                            <img src="img/icons/vector-max.svg" alt="/">
+                        </span>
+                        <p class="idc-instr__step">Рекомендации по продвижению вакансии</p>
+                    </div>
+                </div>
+
+                <div class="idc-macbook">
+                    <div class="idc-macbook__swiper swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="idc-macbook__swiper-wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="idc-macbook__swiper-slide swiper-slide">
+                                <img class="idc-macbook__screen" src="img/instr/macbook-1.png" alt="/">
+                            </div>
+                            <div class="idc-macbook__swiper-slide swiper-slide">
+                                <img class="idc-macbook__screen" src="img/instr/macbook-2.png" alt="/">
+                            </div>
+                            <div class="idc-macbook__swiper-slide swiper-slide">
+                                <img class="idc-macbook__screen" src="img/instr/macbook-3.png" alt="/">
+                            </div>
+                            <div class="idc-macbook__swiper-slide swiper-slide">
+                                <img class="idc-macbook__screen" src="img/instr/macbook-4.png" alt="/">
+                            </div>
+                            <div class="idc-macbook__swiper-slide swiper-slide">
+                                <img class="idc-macbook__screen" src="img/instr/macbook-5.png" alt="/">
+                            </div>
+                            <div class="idc-macbook__swiper-slide swiper-slide">
+                                <img class="idc-macbook__screen" src="img/instr/macbook-6.png" alt="/">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="idc-macbook__swper-pagination swiper-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="idc-whyus">
+            <div class="idc-bg-wrapper">
+                <svg class="idc-wave" xmlns:xlink="http://www.w3.org/1999/xlink " id="wave " style="transform:rotate(0deg); transition: 0.3s " viewBox="0 0 1600 80 " version="1.1 " xmlns="http://www.w3.org/2000/svg ">
+                    <defs>
+                        <linearGradient id="sw-gradient-1" x1="0 " x2="0 " y1="1 " y2="0 ">
+                            <stop stop-color="rgba(247, 248, 250, 1) " offset="0% " />
+                            <stop stop-color="rgba(247, 248, 250, 1) " offset="100% " />
+                        </linearGradient>
+                    </defs>
+                    <path style="transform:translate(0, 0px); opacity:1 " fill="url(#sw-gradient-1) "
+                        d="M0,60L80,65C160,70,320,80,480,76.7C640,73,800,57,960,45C1120,33,1280,27,1440,31.7C1600,37,1760,53,1920,55C2080,57,2240,43,2400,35C2560,27,2720,23,2880,18.3C3040,13,3200,7,3360,11.7C3520,17,3680,33,3840,45C4000,57,4160,63,4320,63.3C4480,63,4640,57,4800,56.7C4960,57,5120,63,5280,70C5440,77,5600,83,5760,71.7C5920,60,6080,30,6240,16.7C6400,3,6560,7,6720,18.3C6880,30,7040,50,7200,55C7360,60,7520,50,7680,40C7840,30,8000,20,8160,15C8320,10,8480,10,8640,8.3C8800,7,8960,3,9120,5C9280,7,9440,13,9600,16.7C9760,20,9920,20,10080,26.7C10240,33,10400,47,10560,53.3C10720,60,10880,60,11040,58.3C11200,57,11360,53,11440,51.7L11520,50L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z " />
+                </svg>
+            </div>
+            <div class="idc-container idc-flex">
+                <button class="idc-button idc-flex ">Оставить заявку</button>
+                <h1 class="idc-title">Почему мы?</h1>
+                <div class="idc-whyus__wrapper idc-flex">
+                    <div class="idc-whyus__item">
+                        <div class="idc-whyus__icon">
+                            <img src="img/whyus/data-icon.svg" alt="/">
+                        </div>
+                        <p class="idc-mini-title">Основываемся на аналитических данных</p>
+                        <p class="idc-subtitle">Мы владеем инструментами анализа рынка и знаем, какие вакансии собирают больше откликов и почему</p>
+                    </div>
+                    <div class="idc-whyus__item">
+                        <div class="idc-whyus__icon">
+                            <img src="img/whyus/recomend-icon.svg" alt="/">
+                        </div>
+                        <p class="idc-mini-title">Даем комплексные рекомендации</p>
+                        <p class="idc-subtitle">Вы получите развернутый ответ по каждому пункту вакансии и узнаете, как соискатели могут ее воспринять</p>
+                    </div>
+                    <div class="idc-whyus__item">
+                        <div class="idc-whyus__icon">
+                            <img src="img/whyus/strateg-icon.svg" alt="/">
+                        </div>
+                        <p class="idc-mini-title">Предлагаем стратегию продвижения</p>
+                        <p class="idc-subtitle">Наши специалисты подберут несколько каналов коммуникации, направленных на ускорение подбора</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="idc-advantage">
+            <div class="idc-bg-wrapper idc-grey-bg">
+                <svg class="idc-wave" xmlns:xlink="http://www.w3.org/1999/xlink " id="wave " style="transform:rotate(0deg); transition: 0.3s " viewBox="0 0 1600 80 " version="1.1 " xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="sw-gradient-0" x1="0 " x2="0 " y1="1 " y2="0 ">
+                            <stop stop-color="rgba(255, 255, 255, 1) " offset="0% " />
+                            <stop stop-color="rgba(255, 255, 255, 1) " offset="100% " />
+                        </linearGradient>
+                    </defs>
+                    <path style="transform:translate(0, 0px); opacity:1 " fill="url(#sw-gradient-0) "
+                        d="M0,60L80,65C160,70,320,80,480,76.7C640,73,800,57,960,45C1120,33,1280,27,1440,31.7C1600,37,1760,53,1920,55C2080,57,2240,43,2400,35C2560,27,2720,23,2880,18.3C3040,13,3200,7,3360,11.7C3520,17,3680,33,3840,45C4000,57,4160,63,4320,63.3C4480,63,4640,57,4800,56.7C4960,57,5120,63,5280,70C5440,77,5600,83,5760,71.7C5920,60,6080,30,6240,16.7C6400,3,6560,7,6720,18.3C6880,30,7040,50,7200,55C7360,60,7520,50,7680,40C7840,30,8000,20,8160,15C8320,10,8480,10,8640,8.3C8800,7,8960,3,9120,5C9280,7,9440,13,9600,16.7C9760,20,9920,20,10080,26.7C10240,33,10400,47,10560,53.3C10720,60,10880,60,11040,58.3C11200,57,11360,53,11440,51.7L11520,50L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z " />
+                </svg>
+            </div>
+            <div class="idc-container idc-flex">
+                <div class="idc-advantage__title-block">
+                    <h1 class="idc-title">Ваши выгоды</h1>
+                    <p class="idc-subtitle">Наши сотрудники позаботятся о том, чтобы поиск кандидатов был для вас максимально комфортным</p>
+                </div>
+                <div class="idc-advantage__items-block idc-flex">
+                    <div class="idc-advantage__item idc-flex">
+                        <div class="idc-advantage__icon">
+                            <img src="img/advantage/red-arrow.svg" alt="/">
+                        </div>
+                        <p class="idc-advantage__text">Увеличение числа откликов от релевантных кандидатов</p>
+                    </div>
+                    <div class="idc-advantage__item idc-flex">
+                        <div class="idc-advantage__icon">
+                            <img src="img/advantage/blue-a.svg" alt="/">
+                        </div>
+                        <p class="idc-advantage__text">Возможность использовать текст вакансии на других ресурсах</p>
+                    </div>
+                    <div class="idc-advantage__item idc-flex">
+                        <div class="idc-advantage__icon">
+                            <img src="img/advantage/purple-item.svg" alt="/">
+                        </div>
+                        <p class="idc-advantage__text">Исследование рынка, составленное специалистами hh.ru</p>
+                    </div>
+                    <div class="idc-advantage__item idc-flex">
+                        <div class="idc-advantage__icon">
+                            <img src="img/advantage/yellow-watches.svg" alt="/">
+                        </div>
+                        <p class="idc-advantage__text">Экономия времени на составление уникального текста вакансии</p>
+                    </div>
+                </div>
+                <div class="idc-advantage__clip">
+                    <img src="img/advantage/skrepka-static.svg" alt="/">
+                </div>
+            </div>
+        </div>
+
+        <div class="idc-article">
+            <div class="idc-bg-wrapper"></div>
+            <div class="idc-container idc-flex">
+                <h1 class="idc-title">Статьи</h1>
+                <div class="idc-article__swiper-block">
+                    <div class="idc-article__swiper swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="idc-article__swiper-wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="idc-article__swiper-slide swiper-slide">
+                                <div class="idc-article__img-wrapper">
+                                    <img class="idc-article__img" src="img/article/people.png" alt="/">
+                                </div>
+                                <p class="idc-article__swiper-title">Рерайтинг вакансий: три способа и одно верное решение</p>
+                            </div>
+                            <div class="idc-article__swiper-slide swiper-slide">
+                                <div class="idc-article__img-wrapper">
+                                    <img class="idc-article__img" src="img/article/vacants.png" alt="/">
+                                </div>
+                                <p class="idc-article__swiper-title">Как сформулировать вакансию для хороших откликов: пошаговая инструкция</p>
+                            </div>
+                            <div class="idc-article__swiper-slide swiper-slide">
+                                <div class="idc-article__img-wrapper">
+                                    <img class="idc-article__img" src="img/article/girl.png" alt="/">
+                                </div>
+                                <p class="idc-article__swiper-title">Почему нет откликов на вакансию? Чек-лист типичных ошибок</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="idc-article__swiper-pagination swiper-pagination"></div>
+                    <div class="idc-article__swiper-button-prev idc-flex">
+                        <img src="img/icons/arrow-left.svg" alt="/">
+                    </div>
+                    <div class="idc-article__swiper-button-next idc-flex">
+                        <img src="img/icons/arrow-right.svg" alt="/">
+                    </div>
+                </div>
+                <div class="idc-article__link-block">
+                    <a class="idc-article__link idc-flex" href="#">Смотреть все статьи 
+                        <svg class="idc-article__link-arrow" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L1 17" stroke-width="2"/>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="idc-prefooter">
+            <div class="idc-bg-wrapper idc-gradient-bg"></div>
+            <div class="idc-container idc-flex">
+                <div class="shape rellax " style="left: 95%;top: 15%; " data-rellax-speed="-2"><img src="img/prefooter animation/pf-paper-r1.svg" alt="/"></div>
+                <div class="shape rellax " style="left: 75%;top: 20%; " data-rellax-speed="2"><img src="img/prefooter animation/pf-paper-r2.svg" alt="/"></div>
+                <div class="shape rellax " style="left: 55%;top: 40%; " data-rellax-speed="-2"><img src="img/prefooter animation/pf-paper-r3.svg" alt="/"></div>
+
+
+                <div class="idc-prefooter__title-wrapper">
+                    <h1 class="idc-title">Привлекайте релевантных кандидатов вместе с Вакансией от эксперта</h1>
+                    <button class="idc-button idc-flex ">Оставить заявку</button>
+                </div>
+                <div class="idc-prefooter__img-wrapper">
+                    <img class="idc-prefooter__img" src="img/prefooter/prefooter-woman.svg" alt="/">
+                </div>
+            </div>
+        </div>
         <script src="js/jquery.js "></script>
         <script src="js/swiper-bundle.min.js "></script>
         <script src="js/rellax.min.js "></script>
