@@ -26,6 +26,7 @@ let banner_resize = function() {
 
 
 document.onreadystatechange = function() {
+
     if (document.readyState === 'complete') {
         // Ваш скрипт
 

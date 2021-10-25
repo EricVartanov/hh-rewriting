@@ -26,6 +26,7 @@ body {
 /* universal classes */
 
 .idc-button {
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -38,7 +39,6 @@ body {
     cursor: pointer;
     width: 250px;
     height: 55px;
-    border: none;
 }
 
 .idc-flex {
@@ -127,7 +127,7 @@ body {
 
 .idc-head .idc-container {
     padding-top: 220px;
-    padding-bottom: 150px;
+    padding-bottom: 147px;
     max-width: 1280px;
     margin: 0 auto;
     z-index: 0;
@@ -135,7 +135,7 @@ body {
 
 .idc-age-limit {
     position: absolute;
-    right: 0;
+    right: -8px;
     top: 18%;
     font-style: normal;
     font-weight: normal;
@@ -156,6 +156,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 40px;
+    letter-spacing: 0.015em;
 }
 
 .idc-head__subtitle-wrapper {
@@ -168,7 +169,7 @@ body {
     line-height: 34px;
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
-    margin: 0 75px;
+    margin: 0 100px;
 }
 
 .idc-head .idc-button {
@@ -188,7 +189,7 @@ body {
 .idc-head__main-img {
     position: relative;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 90px;
     max-width: 750px;
     height: 345px;
     background-repeat: no-repeat;
@@ -203,7 +204,7 @@ body {
     text-align: center;
     align-items: flex-start;
     margin: 0 auto;
-    margin-top: 110px;
+    margin-top: 90px;
 }
 
 .idc-head__info-item:not(:first-child) {
@@ -233,7 +234,7 @@ body {
 
 .idc-analyse .idc-container {
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 222px;
 }
 
 .idc-analyse__wrapper {
@@ -243,7 +244,7 @@ body {
 
 .idc-analyse__title-block {
     max-width: 425px;
-    margin-right: 120px;
+    margin-right: 105px;
     padding-right: 80px;
 }
 
@@ -267,7 +268,7 @@ body {
     position: relative;
     margin-top: 20px;
     bottom: 0px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #E3E4E7;
     padding-left: 65px;
 }
@@ -295,6 +296,81 @@ body {
     background: rgba(146, 86, 255, 0.4)
 }
 
+
+/* *************************подсказка при наведении на i****************************** */
+
+.idc-information {
+    cursor: pointer;
+    position: absolute;
+    right: 16%;
+    top: 24px;
+}
+
+.idc-information__title {
+    transition: visibility .2s ease, opacity .2s ease;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    padding: 8px 14px;
+    width: 320px;
+    height: 130px;
+    padding: 12px 23px;
+    color: #000000;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.015em;
+    border-radius: 10px;
+    word-wrap: break-word;
+    box-shadow: 0px 4px 12px rgba(0, 74, 160, 0.25);
+}
+
+.idc-information__title .idc-title-arrow {
+    border-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.idc-information__title .idc-title-arrow:before,
+.idc-information__title .idc-title-arrow:after {
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: transparent;
+    content: "";
+    pointer-events: none;
+}
+
+.idc-information__title .idc-title-arrow:before {
+    border-width: 6px 6px 0;
+    margin-left: -6px;
+    border-top-color: #fff;
+}
+
+.idc-information__title .idc-title-arrow:after {
+    border-width: 5px 5px 0;
+    margin-left: -5px;
+    border-top-color: inherit;
+}
+
+.idc-information:hover .idc-information__title {
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+}
+
+
+/* *********************конец подсказки*************************** */
+
 .idc-analyse__vector {
     position: absolute;
     top: -4px;
@@ -305,8 +381,9 @@ body {
 
 .idc-analyse__list-item .idc-subtitle,
 .idc-analyse__list-item-two .idc-subtitle {
+    position: relative;
     display: block;
-    max-width: 395px;
+    max-width: 465px;
     font-size: 18px;
     line-height: 21px;
     opacity: 0.7;
@@ -320,7 +397,7 @@ body {
 }
 
 .idc-analyse .idc-button {
-    margin-top: 60px;
+    margin-top: 70px;
     width: 221px;
     height: 55px;
     font-size: 16px;
@@ -354,10 +431,11 @@ body {
 .idc-instr .idc-title {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .idc-instr__wrapper {
+    padding-bottom: 10px;
     justify-content: center;
     align-items: unset;
     position: relative;
@@ -376,10 +454,11 @@ body {
 
 .idc-instr__steps {
     max-width: 474px;
-    margin-right: 105px;
+    margin-right: 165px;
 }
 
 .idc-instr__step {
+    max-width: 410px;
     margin: 0;
     font-style: normal;
     font-weight: normal;
@@ -390,7 +469,7 @@ body {
 }
 
 .idc-instr__step:not(:first-child) {
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .idc-instr__step:first-child {
@@ -415,8 +494,27 @@ body {
 
 .idc-instr__arrow {
     position: absolute;
-    left: 140px;
-    bottom: -35px;
+    left: 200px;
+    bottom: -80px;
+}
+
+.idc-instr__arrow_path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+}
+
+.idc-instr__arrow_path-dashed {
+    stroke-dasharray: 10;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 .idc-instr__get-list {
@@ -502,6 +600,7 @@ body {
 }
 
 .idc-macbook__swiper-slide.swiper-slide {
+    cursor: grab;
     height: 474px;
     width: 758px;
 }
@@ -513,7 +612,7 @@ body {
 }
 
 .idc-macbook__swper-pagination.swiper-pagination.swiper-pagination-horizontal {
-    bottom: -50px;
+    bottom: -65px;
 }
 
 .idc-macbook__swper-pagination .swiper-pagination-bullet {
@@ -533,11 +632,12 @@ body {
 
 .idc-whyus {
     position: relative;
+    z-index: -1;
 }
 
 .idc-whyus .idc-container {
-    padding-top: 250px;
-    padding-bottom: 150px;
+    padding-top: 190px;
+    padding-bottom: 195px;
     padding-left: 80px;
     padding-right: 80px;
     margin: 0 auto;
@@ -603,7 +703,7 @@ body {
 }
 
 .idc-advantage .idc-container {
-    padding-top: 150px;
+    padding-top: 110px;
     padding-bottom: 150px;
 }
 
@@ -627,6 +727,10 @@ body {
 
 .idc-advantage__items-block .idc-advantage__item:nth-child(odd) {
     margin-right: 13px;
+}
+
+.idc-advantage__items-block .idc-advantage__item:nth-child(n+3) {
+    margin-top: 30px;
 }
 
 .idc-advantage__item {
@@ -801,6 +905,7 @@ body {
 .idc-prefooter .idc-button {
     margin-top: 80px;
     color: #0F53FA;
+    background: #ffffff;
 }
 
 .idc-prefooter .idc-button:hover {
