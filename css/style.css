@@ -522,7 +522,7 @@ body {
 .aos-animate svg [data-aos="animate-arrow"] {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    animation: dash 10s linear forwards;
+    animation: dash 15s linear forwards;
 }
 
 .idc-instr__arrow_path-dashed {
