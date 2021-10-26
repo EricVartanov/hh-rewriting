@@ -1,15 +1,8 @@
 'use strict'
 
 
-// параллакс
 
-document.addEventListener('DOMContentLoaded', () => {
 
-    var rellax = new Rellax('.rellax', {
-        center: true // данное свойство отвечает за корректное позиционирование элементов параллакса
-    });
-
-});
 
 
 // скрипт для фона
@@ -30,9 +23,25 @@ document.onreadystatechange = function() {
     if (document.readyState === 'complete') {
         // Ваш скрипт
 
+
         window.addEventListener('resize', function() {
             banner_resize();
         });
         banner_resize();
+
+
+        // Aos 
+
+        AOS.init({
+            once: true,
+        });
+
+
+        // параллакс
+
+        var rellax = new Rellax('.rellax', {
+            center: true // данное свойство отвечает за корректное позиционирование элементов параллакса
+        });
+
     }
 };
