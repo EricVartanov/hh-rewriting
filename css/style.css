@@ -310,7 +310,7 @@ body {
 }
 
 .idc-analyse__title-block .idc-subtitle {
-    margin-top: 44px;
+    margin-top: 40px;
     opacity: 0.8;
 }
 
@@ -1086,6 +1086,21 @@ body {
     margin: 0 auto;
     padding-top: 140px;
     align-items: flex-end;
+}
+
+.prefooter__paper-1 {
+    left: 90%;
+    top: 15%;
+}
+
+.prefooter__paper-2 {
+    left: 75%;
+    top: 20%;
+}
+
+.prefooter__paper-3 {
+    left: 55%;
+    top: 40%;
 }
 
 .idc-prefooter__title-wrapper {
