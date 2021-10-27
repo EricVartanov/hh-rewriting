@@ -59,6 +59,26 @@ body {
     position: fixed;
 }
 
+.idc-main-wrapper__fixed-el:nth-child(1) {
+    left: 6%;
+    top: 80%;
+}
+
+.idc-main-wrapper__fixed-el:nth-child(2) {
+    right: 11%;
+    top: 40%;
+}
+
+.idc-main-wrapper__fixed-el:nth-child(3) {
+    left: 5%;
+    top: 35%;
+}
+
+.idc-main-wrapper__fixed-el:nth-child(4) {
+    right: 8%;
+    top: 70%;
+}
+
 .idc-bg-wrapper {
     height: 100%;
     width: 100%;
@@ -91,7 +111,7 @@ body {
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
-    line-height: 54px;
+    line-height: 44px;
     letter-spacing: 0.015em;
 }
 
@@ -131,6 +151,7 @@ body {
 }
 
 .idc-head .idc-container {
+    flex-direction: column;
     padding-top: 220px;
     padding-bottom: 147px;
     max-width: 1280px;
@@ -138,10 +159,15 @@ body {
     z-index: 0;
 }
 
+.idc-head__title-wrapper {
+    position: relative;
+    z-index: 5;
+}
+
 .idc-age-limit {
     position: absolute;
-    right: -8px;
-    top: 18%;
+    right: -26%;
+    top: 8%;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -197,16 +223,29 @@ body {
     background: transparent;
 }
 
-.idc-head__main-img {
+.idc-head__img-wrapper {
+    display: block;
     position: relative;
     margin: 0 auto;
     margin-top: 90px;
     max-width: 750px;
+    width: 100%;
     height: 345px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: 10;
+    z-index: 5;
+}
+
+.idc-head__mobile-wrapper {
+    display: none;
+}
+
+.idc-head__main-img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 5;
 }
 
 .idc-head__info {
@@ -222,7 +261,11 @@ body {
     max-width: 230px;
 }
 
-.idc-head__info-item:last-child {
+.idc-head__info-item:nth-child(1) {
+    max-width: 260px;
+}
+
+.idc-head__info-item:nth-child(4) {
     max-width: 280px;
 }
 
@@ -231,12 +274,11 @@ body {
 }
 
 .idc-head__info-text {
-    max-width: 280px;
     width: 100%;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 29px;
+    font-size: 23px;
+    line-height: 26px;
     text-align: center;
     letter-spacing: 0.015em;
     color: #FFFFFF;
@@ -268,7 +310,7 @@ body {
 }
 
 .idc-analyse__title-block .idc-subtitle {
-    margin-top: 40px;
+    margin-top: 44px;
     opacity: 0.8;
 }
 
@@ -468,16 +510,8 @@ body {
     position: relative;
     display: block;
     max-width: 465px;
-    font-size: 18px;
-    line-height: 21px;
     opacity: 0.7;
     margin-top: 6px;
-}
-
-.idc-analyse__title-block .idc-title,
-.idc-analyse__list-item-two .idc-title {
-    font-size: 44px;
-    line-height: 54px;
 }
 
 .idc-analyse .idc-button__wrapper {
@@ -575,7 +609,7 @@ body {
 .idc-instr__animate-arrow {
     position: absolute;
     left: 200px;
-    bottom: -80px;
+    bottom: 190px;
 }
 
 .idc-instr__arrow_start {
@@ -619,6 +653,7 @@ body {
 }
 
 .idc-instr__get-list {
+    position: relative;
     justify-content: center;
 }
 
@@ -682,6 +717,10 @@ body {
     transform: translateX(-53%);
 }
 
+.idc-instr__mobile-vrctor {
+    display: none;
+}
+
 .aos-animate .idc-vector-one .idc-instr__vector {
     opacity: 1;
     transition: 1s;
@@ -701,28 +740,41 @@ body {
 }
 
 .idc-macbook {
-    padding: 0px 116px;
-    padding-bottom: 25px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: absolute;
-    width: 990px;
-    height: 559px;
+    max-height: 559px;
+    max-width: 990px;
+    width: 100%;
+    z-index: 10;
+    height: auto;
     bottom: -125px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(../img/instr/macbook.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 10;
+}
+
+.idc-macbook_wrapper {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.idc-macbook__img {
+    display: block;
+    width: 100%;
+}
+
+.idc-macbook__swiper.swiper {
+    width: 77%;
+    padding-top: 3%;
 }
 
 .idc-macbook__swiper-slide.swiper-slide {
     cursor: grab;
-    height: 474px;
-    width: 758px;
 }
 
 .idc-macbook__screen {
@@ -785,6 +837,11 @@ body {
 .idc-whyus .idc-title {
     margin-top: 150px;
     margin-bottom: 40px;
+    text-align: center;
+}
+
+.idc-whyus__wrapper .idc-flex {
+    align-items: flex-start;
 }
 
 .idc-whyus__item {
@@ -840,7 +897,6 @@ body {
 
 .idc-advantage__items-block {
     flex-wrap: wrap;
-    align-items: baseline;
 }
 
 .idc-advantage__items-block .idc-advantage__item:nth-child(odd) {
@@ -860,6 +916,9 @@ body {
 
 .idc-advantage__icon {
     margin-right: 20px;
+    width: 60px;
+    height: 55px;
+    flex-shrink: 0;
 }
 
 .idc-advantage__text {
@@ -896,17 +955,21 @@ body {
 .idc-article__swiper-block {
     position: relative;
     max-width: 1080px;
+    width: 100%;
 }
 
 .idc-article__img-wrapper {
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
-    height: 187px;
-    width: 340px;
+    /* height: 187px;
+    width: 340px; */
+    height: auto;
+    width: 100%;
 }
 
 .idc-article__img {
-    height: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .idc-article__swiper-title {
@@ -971,10 +1034,12 @@ body {
 }
 
 .idc-article__swiper-button-prev {
+    padding-right: 3px;
     left: -80px;
 }
 
 .idc-article__swiper-button-next {
+    padding-left: 3px;
     right: -80px;
 }
 

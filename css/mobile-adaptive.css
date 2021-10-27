@@ -1,1 +1,464 @@
-/* hello */
+@media (max-width: 1699.98px) {
+    .idc-main-wrapper__fixed-el:nth-child(1) {
+        left: 3%;
+        top: 80%;
+    }
+    .idc-main-wrapper__fixed-el:nth-child(2) {
+        right: 3%;
+        top: 40%;
+    }
+    .idc-main-wrapper__fixed-el:nth-child(3) {
+        left: 0%;
+        top: 35%;
+    }
+    .idc-main-wrapper__fixed-el:nth-child(4) {
+        right: 2%;
+        top: 70%;
+    }
+}
+
+@media (max-width: 1479.98px) {
+    .idc-main-wrapper__fixed-el {
+        display: none;
+    }
+}
+
+@media (max-width: 1338.98px) {
+    .idc-main-wrapper__fixed-el {
+        display: none;
+    }
+    .idc-instr__animate-arrow {
+        position: absolute;
+        left: 17vw;
+        bottom: 175px;
+    }
+    .idc-whyus__item {
+        height: 310px;
+    }
+    .idc-advantage__items-block .idc-advantage__item:not(:first-child) {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1279.98px) {
+    .idc-head .idc-container {
+        padding-top: 170px;
+    }
+    .idc-head__title-wrapper {
+        order: 1;
+    }
+    .idc-head__img-wrapper {
+        order: 0;
+    }
+    .idc-head__info {
+        order: 1;
+    }
+    .idc-head__mobile-img {
+        width: 100%;
+    }
+    .idc-head .idc-title {
+        margin-top: 70px;
+        font-size: 70px;
+        letter-spacing: 0.0em;
+    }
+    .idc-head__info {
+        max-width: 710px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 120px;
+    }
+    .idc-head__info-item:nth-child(3) {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    .idc-head__info-item:last-child {
+        max-width: 335px;
+        margin-top: 60px;
+    }
+    .idc-head__info-item {
+        max-width: 335px;
+    }
+    .idc-head__info-text {
+        max-width: none;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .idc-article__swiper-button-prev,
+    .idc-article__swiper-button-next {
+        display: none;
+    }
+}
+
+@media (max-width: 1018.98px) {
+    .idc-subtitle {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .idc-head .idc-container {
+        padding-top: 200px;
+    }
+    .idc-head__main-img,
+    .idc-head__img-wrapper .shape {
+        display: none;
+    }
+    .idc-head__img-wrapper {
+        margin-top: 0;
+        height: 100%;
+    }
+    .idc-head__mobile-wrapper {
+        display: block;
+    }
+    .idc-analyse__wrapper {
+        flex-wrap: wrap;
+    }
+    .idc-analyse__title-block {
+        padding-right: 0;
+        margin-right: 0;
+        padding: 0 20px;
+        padding-bottom: 55px;
+    }
+    .idc-analyse .idc-subtitle {
+        margin-top: 20px;
+    }
+    .idc-analyse__title-block {
+        max-width: 450px;
+    }
+    .idc-analyse__list-block {
+        margin-right: 40px;
+    }
+    .idc-information {
+        top: 25px;
+        right: 0%;
+    }
+    .idc-instr .idc-container {
+        padding-bottom: 420px;
+    }
+    .idc-instr .idc-title {
+        margin-bottom: 0;
+    }
+    .idc-instr__wrapper {
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+    .idc-instr__steps {
+        margin-right: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .idc-instr__step:first-child {
+        margin-top: 60px;
+    }
+    .idc-instr__screen-img {
+        margin-top: 45px;
+    }
+    .idc-instr__get-list {
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    .idc-instr__get-item {
+        max-width: 220px;
+        margin-left: 15px;
+    }
+    .idc-instr__animate-arrow {
+        transform: rotate(30deg);
+        left: 11vw;
+        bottom: 245px;
+    }
+    .idc-vector-one {
+        margin-left: 0;
+    }
+    .idc-instr__vector {
+        left: 55%;
+        transform: translateX(-55%);
+    }
+    .idc-macbook__swper-pagination.swiper-pagination.swiper-pagination-horizontal {
+        bottom: -40px;
+    }
+    .idc-whyus .idc-container {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 150px;
+    }
+    .idc-whyus .idc-button__wrapper {
+        margin-top: 80px;
+    }
+    .idc-whyus .idc-subtitle,
+    .idc-mini-title {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .idc-whyus__item {
+        height: auto;
+        margin-left: 10px;
+    }
+    .idc-advantage .idc-container {
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .idc-advantage__title-block {
+        margin-right: 0;
+        max-width: 465px;
+    }
+    .idc-advantage__title-block .idc-subtitle {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 25px;
+    }
+    .idc-advantage__items-block {
+        margin-top: 50px;
+        align-items: flex-end;
+    }
+    .idc-advantage__item {
+        max-width: 334px;
+    }
+    .idc-advantage__clip {
+        left: 80%;
+        bottom: -1%;
+    }
+    .idc-prefooter__title-wrapper {
+        padding-bottom: 100px;
+        margin-right: 140px;
+    }
+    .idc-prefooter__img-wrapper {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .idc-instr .idc-container {
+        padding-bottom: 345px;
+    }
+}
+
+@media (max-width: 688.98px) {
+    .idc-button {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        padding: 12px 36px 12px;
+        width: 290px;
+    }
+    .idc-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .idc-subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .idc-head .shape,
+    .idc-head__arrows {
+        display: none;
+    }
+    .idc-head .idc-title {
+        font-size: 30px;
+        line-height: 37px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .idc-head .idc-subtitle {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0;
+    }
+    .idc-head__info {
+        margin-top: 70px;
+        justify-content: left;
+    }
+    .idc-head__info-item {
+        display: flex;
+        width: 290px;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .idc-head__info-item:not(:first-child) {
+        margin-left: 0;
+    }
+    .idc-head__info-item:nth-child(3) {
+        margin-top: 25px;
+    }
+    .idc-head__info-item:last-child {
+        margin-top: 25px;
+    }
+    .idc-head__info-item:first-child {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .idc-head__info-text {
+        text-align: left;
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0;
+        margin-left: 15px;
+    }
+    .idc-head__info-img {
+        width: 50px;
+        height: 50px;
+    }
+    .idc-analyse .idc-container {
+        padding-top: 100px;
+    }
+    .idc-analyse__wrapper {
+        margin-top: 0;
+    }
+    .idc-analyse__list-block {
+        margin-right: 0;
+    }
+    .idc-analyse__list-item::before,
+    .idc-analyse__list-item-two::before {
+        left: 0;
+    }
+    .idc-analyse__vector {
+        left: 4px;
+    }
+    .idc-analyse__list-item,
+    .idc-analyse__list-item-two {
+        padding-left: 34px;
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 300px;
+    }
+    .idc-analyse .idc-subtitle {
+        margin-top: 10px;
+    }
+    .idc-analyse__title-block .idc-title {
+        margin-top: 45px;
+    }
+    .idc-information {
+        right: 15%;
+        top: 38px;
+    }
+    .idc-analyse .idc-button__wrapper {
+        margin-top: 60px;
+    }
+    .idc-analyse .idc-button {
+        font-size: 16px;
+    }
+    .idc-analyse .idc-container {
+        padding-bottom: 100px;
+    }
+    .idc-instr__step:first-child {
+        margin-top: 40px;
+    }
+    .idc-instr__step {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .idc-instr__step-number {
+        padding: 6px 11px;
+        font-size: 20px;
+    }
+    .idc-instr__screen-img {
+        position: relative;
+        z-index: 5;
+    }
+    .idc-instr__animate-arrow {
+        left: -3%;
+        bottom: 241px;
+    }
+    .idc-instr__get-list {
+        flex-wrap: wrap;
+    }
+    .idc-instr__get-item {
+        padding-top: 47px;
+        max-width: 120px;
+    }
+    .idc-vector-two {
+        margin-left: 20px;
+    }
+    .idc-vector-three {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .idc-vector-one::before,
+    .idc-vector-two::before,
+    .idc-vector-three::before {
+        width: 35px;
+        height: 35px;
+    }
+    .idc-instr__desktop-vector {
+        display: none;
+    }
+    .idc-instr__mobile-vrctor {
+        display: block;
+    }
+    .idc-instr__vector {
+        left: 57%;
+        transform: translateX(-57%);
+        top: 0px;
+    }
+    .idc-instr .idc-container {
+        padding-bottom: 115px;
+    }
+    .idc-whyus .idc-container {
+        padding-bottom: 100px;
+    }
+    .idc-whyus__wrapper {
+        overflow-x: auto;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .idc-whyus__wrapper::-webkit-scrollbar {
+        width: 0 !important;
+    }
+    .idc-whyus__item {
+        flex-shrink: 0;
+        max-width: 235px;
+    }
+    .idc-advantage .idc-container {
+        padding-bottom: 100px;
+    }
+    .idc-advantage__title-block .idc-subtitle {
+        max-width: 277px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .idc-advantage__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .idc-advantage__icon {
+        width: 44px;
+        height: 44px;
+    }
+    .idc-advantage__icon img {
+        width: 100%;
+    }
+    .idc-article .idc-container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .idc-article__swiper-title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .idc-article__link {
+        font-size: 15px;
+        line-height: 17px;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .idc-prefooter__title-wrapper {
+        margin-right: 0;
+    }
+    .idc-prefooter .idc-container {
+        padding-top: 100px;
+    }
+    .idc-prefooter .idc-title {
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+    }
+    .idc-prefooter .idc-button__wrapper {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
