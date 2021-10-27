@@ -24,6 +24,10 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
+.idc-main-wrapper {
+    margin: 0 auto;
+}
+
 
 /* universal classes */
 
@@ -360,11 +364,17 @@ body {
 
 /* *************************подсказка при наведении на i****************************** */
 
+.idc-information__snippet {
+    position: relative;
+}
+
 .idc-information {
+    display: block;
     cursor: pointer;
     position: absolute;
-    right: 16%;
-    top: 24px;
+    right: -12px;
+    top: -12px;
+    opacity: 1;
 }
 
 .idc-information__title {
@@ -394,7 +404,8 @@ body {
     box-shadow: 0px 4px 12px rgba(0, 74, 160, 0.25);
 }
 
-.idc-information__title .idc-title-arrow {
+.idc-title-arrow {
+    display: block;
     border-color: #ffffff;
     position: absolute;
     top: 100%;
@@ -425,12 +436,13 @@ body {
 
 .idc-information:hover .idc-information__title {
     visibility: visible;
-    opacity: 1;
+    opacity: 1!important;
     z-index: 5;
     transition: 0.5s;
 }
 
 .idc-information__img-wrapper {
+    display: block;
     position: relative;
     width: 16px;
     height: 16px;
@@ -510,7 +522,7 @@ body {
     position: relative;
     display: block;
     max-width: 465px;
-    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.7);
     margin-top: 6px;
 }
 
@@ -540,6 +552,12 @@ body {
     padding-top: 25px;
     padding-bottom: 531px;
     margin: 0 auto;
+}
+
+.idc-instr__title-wrapper .idc-title {
+    display: inline-block;
+    text-align: center;
+    position: relative;
 }
 
 .idc-instr .idc-title {
@@ -606,10 +624,14 @@ body {
     margin-right: 15px;
 }
 
+.idc-instr__title-wrapper {
+    text-align: center;
+}
+
 .idc-instr__animate-arrow {
     position: absolute;
-    left: 200px;
-    bottom: 190px;
+    left: -50%;
+    bottom: 7px;
 }
 
 .idc-instr__arrow_start {

@@ -27,11 +27,6 @@
     .idc-main-wrapper__fixed-el {
         display: none;
     }
-    .idc-instr__animate-arrow {
-        position: absolute;
-        left: 17vw;
-        bottom: 175px;
-    }
     .idc-whyus__item {
         height: 310px;
     }
@@ -134,10 +129,6 @@
     .idc-analyse__list-block {
         margin-right: 40px;
     }
-    .idc-information {
-        top: 25px;
-        right: 0%;
-    }
     .idc-instr .idc-container {
         padding-bottom: 420px;
     }
@@ -169,8 +160,8 @@
     }
     .idc-instr__animate-arrow {
         transform: rotate(30deg);
-        left: 11vw;
-        bottom: 245px;
+        left: -40%;
+        bottom: 40px;
     }
     .idc-vector-one {
         margin-left: 0;
@@ -353,8 +344,21 @@
         margin-top: 45px;
     }
     .idc-information {
-        right: 15%;
-        top: 38px;
+        right: -20px;
+        top: 0;
+    }
+    .idc-information__title {
+        width: 265px;
+        height: 110px;
+        position: absolute;
+        transform: translateX(-80%);
+        right: 0;
+        left: 0;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .idc-title-arrow {
+        left: 83%;
     }
     .idc-analyse .idc-button__wrapper {
         margin-top: 60px;
@@ -380,8 +384,8 @@
         z-index: 5;
     }
     .idc-instr__animate-arrow {
-        left: -3%;
-        bottom: 241px;
+        left: -38%;
+        bottom: 45px;
     }
     .idc-instr__get-list {
         flex-wrap: wrap;
@@ -394,8 +398,7 @@
         margin-left: 20px;
     }
     .idc-vector-three {
-        margin-left: 0;
-        margin-top: 25px;
+        margin-top: 0;
     }
     .idc-vector-one::before,
     .idc-vector-two::before,
@@ -415,7 +418,7 @@
         top: 0px;
     }
     .idc-instr .idc-container {
-        padding-bottom: 115px;
+        padding-bottom: 265px;
     }
     .idc-whyus .idc-container {
         padding-bottom: 100px;
@@ -517,5 +520,15 @@
     .prefooter__paper-3 {
         left: 30%;
         top: 70%;
+    }
+}
+
+@media (max-width: 419.98px) {
+    .idc-vector-three {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .idc-instr .idc-container {
+        padding-bottom: 115px;
     }
 }

@@ -27,20 +27,27 @@ const articleSwiper = new Swiper('.idc-article__swiper', {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-            spaceBetween: 20
+            spaceBetween: 20,
+            slidesPerGroup: 1,
+
         },
         // when window width is >= 480px
         480: {
             slidesPerView: 2,
-            spaceBetween: 20
+            spaceBetween: 20,
+            slidesPerGroup: 2,
+
         },
         1024: {
             slidesPerView: 2,
-            spaceBetween: 20
+            spaceBetween: 20,
+            slidesPerGroup: 2,
+
         },
         1280: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 30,
+            slidesPerGroup: 3,
         },
     },
 
