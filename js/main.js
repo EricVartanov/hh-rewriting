@@ -43,10 +43,7 @@ document.onreadystatechange = function() {
         var rellax = new Rellax('.rellax', {
             center: true // данное свойство отвечает за корректное позиционирование элементов параллакса
         });
-        let pageWidth = document.documentElement.clientWidth
-        if (pageWidth < 1004) {
-            rellax.destroy();
-        }
+
 
     }
 };

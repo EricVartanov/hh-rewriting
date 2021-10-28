@@ -30,6 +30,7 @@ const articleSwiper = new Swiper('.idc-article__swiper', {
             spaceBetween: 20,
             slidesPerGroup: 1,
 
+
         },
         // when window width is >= 480px
         480: {
@@ -55,6 +56,8 @@ const articleSwiper = new Swiper('.idc-article__swiper', {
         el: '.idc-article__swiper-pagination',
         type: 'bullets',
         clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 6,
     },
     navigation: {
         nextEl: '.idc-article__swiper-button-next',
