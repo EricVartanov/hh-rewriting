@@ -18,11 +18,11 @@
 }
 
 @media (max-width: 1479.98px) {
-    .idc-head__zigzag {
-        display: none;
-    }
     .idc-main-wrapper__fixed-el {
         display: none;
+    }
+    .idc-head__zigzag {
+        display: block
     }
 }
 
@@ -401,6 +401,9 @@
         font-size: 18px;
         line-height: 21px;
         margin: 0;
+    }
+    .idc-main-wrapper__fixed-el {
+        display: none;
     }
     .idc-head .idc-button__wrapper {
         margin-top: 43px;

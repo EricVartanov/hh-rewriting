@@ -271,6 +271,10 @@ body {
     position: relative;
 }
 
+.idc-head__zigzag {
+    display: none;
+}
+
 .idc-header__paper-1 {
     left: 87%;
     top: 42%;
