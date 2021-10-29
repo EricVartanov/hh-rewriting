@@ -57,7 +57,7 @@ const articleSwiper = new Swiper('.idc-article__swiper', {
         type: 'bullets',
         clickable: true,
         dynamicBullets: true,
-        dynamicMainBullets: 6,
+        dynamicMainBullets: 1,
     },
     navigation: {
         nextEl: '.idc-article__swiper-button-next',

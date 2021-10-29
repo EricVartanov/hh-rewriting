@@ -1,7 +1,7 @@
 'use strict'
 
 
-
+let docWidth = document.documentElement.clientWidth
 
 
 
@@ -15,7 +15,29 @@ let banner_resize = function() {
     });
 }
 
-
+let TooltipMobile = function(docwidth) {
+    if (docwidth < 1200) {
+        let AllTooltip = [].slice.call(document.querySelectorAll('.idc-information'));
+        /*    console.log(AllTooltip.length) */
+        AllTooltip.forEach(function(elem) {
+            elem.addEventListener('click', function() {
+                this.classList.add('open')
+            })
+        });
+        // Обработки клика по документу вне области tooltip //
+        document.addEventListener('click', function(e) { // событие клика по веб-документу
+            let ToolTipOpen = document.querySelector('.idc-information.open')
+            console.log(ToolTipOpen)
+            console.log(e.target)
+            const target = e.target
+            if (ToolTipOpen.contains(target)) return false
+            else {
+                ToolTipOpen.classList.remove('open')
+            }
+        });
+        //----------------------//
+    } else return false;
+}
 
 
 document.onreadystatechange = function() {
@@ -26,7 +48,9 @@ document.onreadystatechange = function() {
 
 
         window.addEventListener('resize', function() {
+            docWidth = document.documentElement.clientWidth
             banner_resize();
+            TooltipMobile(docWidth)
         });
         banner_resize();
 
@@ -43,7 +67,8 @@ document.onreadystatechange = function() {
         var rellax = new Rellax('.rellax', {
             center: true // данное свойство отвечает за корректное позиционирование элементов параллакса
         });
-
-
+        // Инициализация работы тултипов c учётом тултипа сравнения в мини карточках //
+        TooltipMobile(docWidth)
     }
+
 };
