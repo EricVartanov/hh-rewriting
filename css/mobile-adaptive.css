@@ -357,8 +357,8 @@
 
 @media (max-width: 767.98px) {
     .idc-gradient-bg {
-        background: -o-linear-gradient(78.73deg, rgba(6, 41, 105, 0.61) -0.58%, rgba(110, 8, 126, 0) 34.85%), -o-linear-gradient(158.38deg, #3A1182 -0.41%, #C531BF 50%, #FDA727 97.53%);
-        background: linear-gradient(11.27deg, rgba(6, 41, 105, 0.61) -0.58%, rgba(110, 8, 126, 0) 34.85%), linear-gradient(291.62deg, #3A1182 -0.41%, #C531BF 50%, #FDA727 97.53%);
+        background: -o-linear-gradient(13.45deg, rgba(6, 41, 105, 0.61) -16.83%, rgba(110, 8, 126, 0) 24.32%), -o-linear-gradient(288.28deg, #3A1182 -5.41%, #C531BF 47.52%, #FDA727 97.41%);
+        background: linear-gradient(13.45deg, rgba(6, 41, 105, 0.61) -16.83%, rgba(110, 8, 126, 0) 24.32%), linear-gradient(288.28deg, #3A1182 -5.41%, #C531BF 47.52%, #FDA727 97.41%);
     }
     .idc-main-wrapper {
         padding: 0 20px;
@@ -615,7 +615,7 @@
         margin-top: 5px;
     }
     .idc-advantage .idc-container {
-        padding-bottom: 100px;
+        padding-bottom: 115px;
         padding-top: 107px;
         padding-right: 0;
         padding-left: 0;
@@ -659,7 +659,7 @@
         width: 100%;
     }
     .idc-article .idc-container {
-        padding-top: 115px;
+        padding-top: 100px;
         padding-bottom: 100px;
     }
     .idc-article__swiper-title {
@@ -797,8 +797,8 @@
     .idc-header__paper-4 {
         width: 35px;
         height: 40px;
-        left: 10%;
-        top: 58%;
+        left: 5%;
+        top: 95%;
     }
     .idc-vector-three {
         margin-top: 25px;
@@ -806,6 +806,15 @@
 }
 
 @media (max-width: 445.98px) {
+    .idc-instr .idc-container {
+        padding-bottom: 190px;
+    }
+    .idc-macbook {
+        bottom: 1px;
+    }
+    .idc-whyus .idc-container {
+        padding-top: 15px;
+    }
     .idc-information__title {
         -webkit-transform: translateX(-40%);
         -ms-transform: translateX(-40%);
@@ -819,7 +828,7 @@
 @media (max-width: 399.98px) {
     .idc-head__circle {
         left: 0%;
-        top: 120px;
+        top: 100px;
         width: 107px;
         height: 107px;
     }
@@ -828,9 +837,6 @@
     }
     .idc-vector-three {
         margin-left: 0;
-    }
-    .idc-instr .idc-container {
-        padding-bottom: 115px;
     }
 }
 
@@ -842,6 +848,17 @@
     }
     .idc-title-arrow {
         left: 83%;
+    }
+    .idc-instr__animate-arrow-mobile .idc-instr__arrow_end {
+        bottom: 70px;
+        left: -67px;
+    }
+    .idc-instr__animate-arrow-mobile {
+        left: -16%;
+        bottom: -37px;
+    }
+    .idc-instr__animate-arrow-mobile .idc-instr__arrow_path-dashed {
+        stroke-dasharray: 6;
     }
 }
 
